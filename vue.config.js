@@ -1,5 +1,5 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true,
-  publicPath: 'https://github.com/Heck07/chez-tontons.git'
-})
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? 'https://github.com/Heck07/chez-tontons' // Remplacez cela par le nom de votre dépôt
+    : '/'
+};
