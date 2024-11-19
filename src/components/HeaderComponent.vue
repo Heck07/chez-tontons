@@ -309,69 +309,81 @@
       color: #F44336;
     }
 
-    @media screen and (max-width: 768px) {
-      .address {
-        display: none;
-      }
-      .header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .burger-menu {
-        display: block;
-        text-align: center;
-      }
-
-      .menu {
-        display: none;
-        position: fixed;
-        top: 63px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.9);
-        gap: 20px;
-        z-index: 2000;
-      }
-
-      .menu.open {
-        display: flex;
-        justify-content: baseline;
-      }
-
-      .menu ul {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .menu a {
-        font-size: 1.5rem;
-        color: #FFF;
-      }
-
-      .socials {
-        display: none;
-      }
-    }
-
     @media screen and (max-width: 1200px) {
+  .menu ul {
+    align-items: center;
+    justify-content: center;
+  }
+}
 
-      .menu ul{
-        align-items: center;
-        justify-content: center;
-      }
-    }
+@media screen and (max-width: 836px) {
+  .socials {
+    display: none;
+  }
+}
 
-    @media screen and (max-width: 836px) {
+@media screen and (max-width: 768px) {
+  .banner {
+    font-size: 1rem;
+  }
+  .address {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: +100px;
+  }
 
-      .socials {
-        display:none;
-      }
-    }
+  .burger-menu {
+    display: block;
+    text-align: center;
+  }
 
+  .menu {
+    display: none;
+    position: fixed;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    gap: 20px;
+    z-index: 2000;
+  }
+
+  .menu.open {
+    display: flex;
+    justify-content: baseline;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    font-size: 1.5rem;
+    color: #FFF;
+  }
+
+  .socials {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .header {
+    position: fixed; /* Assurez-vous que la position est correcte */
+    top: 100px;
+  }
+  .banner {
+    font-size: 0.5rem;
+  }
+}
     </style>
+
